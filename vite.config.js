@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
+import { defineConfig } from 'vite';
 
 export default defineConfig({
     plugins: [
@@ -11,4 +11,18 @@ export default defineConfig({
             refresh: true,
         }),
     ],
+    server: {
+        host: '0.0.0.0',
+        port: 5173,
+        strictPort: true,
+        hmr: {
+            host: 'my-portfolio-4-zael.onrender.com',
+        },
+    },
+    preview: {
+        host: '0.0.0.0',
+        port: 5173,
+        strictPort: true,
+        allowedHosts: ['my-portfolio-4-zael.onrender.com'],
+    },
 });
