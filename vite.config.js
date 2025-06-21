@@ -21,13 +21,13 @@ export default defineConfig({
         port: 5173,
         strictPort: true,
         hmr: {
-            host: 'my-portfolio-4-zael.onrender.com',
+            host: 'my-portfolio-5-zael.onrender.com',
         },
     },
     preview: {
         host: '0.0.0.0',
         port: 5173,
         strictPort: true,
-        allowedHosts: ['my-portfolio-4-zael.onrender.com'],
+        allowedHosts: ['my-portfolio-5-zael.onrender.com'],
     },
 });
